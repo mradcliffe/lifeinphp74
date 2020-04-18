@@ -6,10 +6,9 @@ Code kata for Conway's Game of Life using PHP 7.4.
 
 We want to demonstrate the following features of PHP 7.4:
 
-- [ ] Typed Properties
+- [x] Typed Properties
 - [ ] Arrow Functions
-- [ ] (Limited) Return Type Covariance
-- [ ] Argument Type Contravariance
+- [x] (Limited) Return Type Covariance and Argument Type Contravariance
 - [ ] Null-Coalescing assignment operator
 - [ ] Unpacking Inside Arrays (Spread Operator)
 
