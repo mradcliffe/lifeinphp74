@@ -23,7 +23,7 @@ class Grid
         }
     }
 
-    public static function fromFile(string $filepath): Grid
+    public static function fromFile(string $filepath): self
     {
         if (realpath($filepath)) {
             $contents = file_get_contents($filepath);
