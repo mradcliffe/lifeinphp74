@@ -9,6 +9,7 @@
       "email": "mradcliffe@softpixel.com"
     }
   ],
+  "bin": ["app/run.php"],
   "require": {
   },
   "require-dev": {
@@ -17,7 +18,7 @@
   "autoload": {
     "psr-4": {
       "ColumbusPHP\\GameOfLife\\": "src/",
-      "ColumbusPHP\\Tests\\": "tests/"
+      "ColumbusPHP\\Tests\\GameOfLife\\": "tests/GameOfLife/"
     }
   }
 }

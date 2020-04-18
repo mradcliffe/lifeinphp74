@@ -1,3 +1,7 @@
 FROM php:7.4-zts-alpine
 
-CMD ["php", "run.php"]
+COPY . /usr/src/lifeinphp74
+
+WORKDIR /usr/src/lifeinphp74
+
+CMD ["php", "app/run.php"]
