@@ -1,0 +1,11 @@
+/.idea/
+/.vscode/
+/.vs/
+/nbproject/
+/coverage/
+/docs/
+/vendor/
+
+composer.lock
+.DS_Store
+Thumbs.db
