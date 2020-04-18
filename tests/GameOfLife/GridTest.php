@@ -67,6 +67,14 @@ class GridTest extends TestCase
         $this->assertEquals($expected, $grid->cellWillLive($cell));
     }
 
+    public function testTick(): void
+    {
+        $expected = "Generation 2:\n4 8\n........\n...**...\n...**...\n........\n";
+        $grid = Grid::fromFile(__DIR__ . '/../../fixtures/default.txt');
+        $grid->tick();
+        $this->assertEquals($expected, $grid);
+    }
+
     public function cellProvider(): array
     {
         return [
