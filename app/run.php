@@ -9,17 +9,11 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use ColumbusPHP\GameOfLife\Grid;
 
-$iterations = 1;
-$filename = 'default.txt';
-if (isset($argv[1])) {
-    $filename = $argv[1];
-}
-if (isset($argv[2]) && filter_var($argv[2], FILTER_VALIDATE_INT) !== false && $argv[2] > 0) {
-    $iterations = $argv[2];
-}
+$argv[1] ??= 'default.txt';
+$argv[2] ??= 1;
 
-$grid = Grid::fromFile(__DIR__ . '/../fixtures/' . $filename);
-for ($i = 0; $i < $iterations; $i++) {
+$grid = Grid::fromFile(__DIR__ . '/../fixtures/' . $argv[1]);
+for ($i = 0; $i < $argv[2]; $i++) {
     $grid->tick();
     echo $grid;
 }
