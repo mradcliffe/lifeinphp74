@@ -4,4 +4,4 @@ COPY . /usr/src/lifeinphp74
 
 WORKDIR /usr/src/lifeinphp74
 
-CMD ["php", "app/run.php"]
+ENTRYPOINT ["php", "app/run.php"]
